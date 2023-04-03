@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Test</title>
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+</head>
+<body>
+    <center><h1>Request Form</h1></center>
+    <div style="text-align: center; margin-top: 30px;">
+        <p>
+            <ons-input id="url" modifier="underbar" placeholder="URL" float disabled value="https://homel.vsb.cz/~mor03/TAMZ/TAMZ22.php"></ons-input>
+        </p>
+        <p>
+            <ons-input id="login" modifier="underbar" placeholder="Login" float></ons-input>
+        </p>
+            <ons-button onclick="requestCode()">Request Code</ons-button>
+        </p>
+    </div>
+    <hr></hr>
+    <h1><center>Test Key</center></h1>
+    <div style="text-align: center; margin-top: 30px;">
+        <p>
+            <ons-input id="url2" modifier="underbar" placeholder="URL" float disabled value="https://homel.vsb.cz/~mor03/TAMZ/TAMZ22.php"></ons-input>
+        </p>
+        <p>
+            <ons-input id="login2" modifier="underbar" placeholder="Login" float disabled></ons-input>
+        </p>
+        <p>
+            <ons-input id="code" modifier="underbar" placeholder="Code" float disabled></ons-input>
+        </p>
+            <ons-button onclick="testAPI()">Test API Key</ons-button>
+        </p>
+    </div>
+
+    <script src="./fetch.js"></script>
+</body>
+</html>
